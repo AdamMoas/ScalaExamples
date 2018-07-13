@@ -26,4 +26,12 @@ object Functions {
 
   printName(firstName = "Adam", lastName = "Moas")
 
+  def sumNumbers(args: Int*) = {
+    var result = 0
+    for (arg <- args) result += arg
+    result
+  }
+
+  println(sumNumbers(1, 2, 3, 4, 5))
+
 }
