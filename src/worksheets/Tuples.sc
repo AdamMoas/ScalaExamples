@@ -6,9 +6,9 @@ object Tuples {
 
   val symbols = Array("<", "-", ">")
   val numbers = Array(2, 4, 6)
-  val pairs = symbols.zip(numbers).toList // combines each element to its corresponding element of the other Array
+  val pairs = symbols.zip(numbers).toList // Combines each element to its corresponding element of the second Array
 
-  for ((s, n) <- pairs) print(s * n) // Add printLn if clearing the buffer is needed
+  for ((s, n) <- pairs) print(s * n) // Add println if clearing the buffer is needed
 
   def divide10(n: Int): (Int, Int) = (n / 10, n % 10)
 
