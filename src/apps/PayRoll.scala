@@ -17,7 +17,7 @@ class Employee(val fName: String, val lName: String, var salaried: Char = 'n') {
 }
 
 object Employee {
-  // Companion object
+  // Singleton / Companion object
   var employeeID = 0
 
   def newEEID() = {
