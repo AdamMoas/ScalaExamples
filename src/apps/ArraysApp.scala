@@ -23,7 +23,7 @@ object ArraysApp extends App {
   }
 
   var numberArray = Array(1, 4, 3, 7, 2, 9, 100, 54, 99, 34)
-  
+
   println("Average: " + average(numberArray))
   println("Min: " + min(numberArray))
   println("Max: " + max(numberArray))
