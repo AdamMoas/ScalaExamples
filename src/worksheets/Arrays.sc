@@ -13,5 +13,5 @@ object Arrays {
 
   var even = for(n <- a if n % 2 == 0) yield n // Only prints the even numbers in the Array a
   even.toList
-  
+
 }
