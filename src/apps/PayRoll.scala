@@ -9,6 +9,19 @@ object PayRoll extends App {
 class Employee(val fName: String, val lName: String, var salaried: Char = 'n') {
   def fullName: String = fName + " " + lName
 
-  override def toString: String = "Employee name: " + fullName +
+  var employeeID = Employee.newEEID()
+
+  override def toString: String = "Employee name: " + fullName + "\nEmployee ID: " +
+    employeeID +
     (if (salaried == 'n') "\nHourly Employee" else "\nSalaried Employee") + ("\n" + "-" * 20)
+}
+
+object Employee {
+  // Companion object
+  var employeeID = 0
+
+  def newEEID() = {
+    employeeID += 1
+    employeeID
+  }
 }
