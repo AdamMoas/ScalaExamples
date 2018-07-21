@@ -15,5 +15,5 @@ object Lists {
 
   val list = List((1,2), (3,4), (5,6))
   for((a,b) <- list) yield a + b // Sums each tuple
-  
+
 }
